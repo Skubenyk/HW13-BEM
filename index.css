@@ -1,0 +1,109 @@
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+/* Параметри body: ширина сторінки,тип шрифта,його розмір і відстань між строками  */
+body {
+  width: 1400px;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* Змінюємо властивости блочних елементів */
+.container-design-professionals {
+  display: flex;
+}
+/* Відступ згори для малого заголовка */
+.design-professionals__smol-title {
+  margin-bottom:45px;
+}
+/* Для сіх заголовків 2-го порядку задаємо розмір шрифта і відступ знизу */
+h2 {
+  font-size:36px;
+  margin-bottom:25px;
+}
+/* Для всіх заголовків 3-го порядку робимо відступ знизу */
+h3 {
+  margin-bottom:15px;
+}
+/* Для основоного блоку задаємо ширину блока і відступи */
+.wrapper-design-professionals {
+  width:400px;
+  margin-top:45px;
+  margin-left:145px;
+}
+/* Для фото в блоці дизайн задаємо відступи */
+.design__image {
+  margin-left:110px;
+  margin-top:20px;
+  margin-bottom:110px;
+}
+/* Для звичайного текста задаемо відступ знизу */
+.design-professionals__text,.accessory-makers__text,.alterationists__text {
+  margin-bottom:25px;
+}
+/* Змінюємо властивости блочних елементів */
+.container-product,.product__list,.product__item {
+  display: flex;
+}
+/* Для основоного блоку задаємо ширину блока і відступи */
+.wrapper-product{
+  width:400px;
+  margin-left:100px;
+  margin-top:45px;
+}
+/* Виставляєм елементи в стовбчик */
+.product__list {
+  flex-direction: column;
+}
+/* Виставляемо відступи для основного фото блока */
+.product__image {
+  margin-left:145px;
+  margin-top:20px;
+  margin-bottom:110px;
+}
+/* Вказуємо відступ знизу для малого заголовка */
+.product__smol-title {
+  margin-bottom:45px;
+}
+/* Задаємо відступи знизу від тексту і елементів списку */
+.product__text,.product__item {
+  margin-bottom:25px;
+}
+/* Задаємо відступи для галочок в списку */
+.product__item__img {
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+/* Змінюємо властивости блочних елементів */
+.container-marketers {
+  display: flex;
+}
+/* Відступ згори для малого заголовка */
+.marketers__smol-title {
+  margin-bottom:45px;
+}
+/* Для основоного блоку з текстом задаємо ширину блока і відступи */
+.wrapper-marketers {
+  width:400px;
+  margin-top:45px;
+  margin-left:145px;
+}
+/* Для фото в блоці дизайн задаємо відступи */
+.marketers__image {
+  margin-left:85px;
+  margin-top:20px;
+  margin-bottom:170px;
+}
+/* Для звичайного текста задаемо відступ знизу */
+.marketers__text,.marketers__alterationists__text,.marketers__custom-design-designers__text,
+.marketers__accessory-makers__text {
+  margin-bottom:25px;
+}
+
+
+

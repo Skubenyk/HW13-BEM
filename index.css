@@ -1,109 +1,275 @@
+/* Global */
 * {
-  margin: 0; 
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
-/* Параметри body: ширина сторінки,тип шрифта,його розмір і відстань між строками  */
+
 body {
   width: 1400px;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
+  color: #544837;
   line-height: 26px;
 }
-/* Змінюємо властивости блочних елементів */
+
+h1, h2, h3 {
+  color: #2F281E;
+  line-height: 55px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+/* Button */
+.footer-button, .design-thinking__button, .design-tools__button, .navigation .navigation__button__sign-up {
+  height: 45px;
+  border-radius: 4px;
+  background-color: #FF9900;
+  color: #FFFFFF;
+  border: none;
+  font-weight: bold;
+}
+/* Input */
+.footer-input {
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #BCD0E5;
+  border-radius: 4px;
+}
+/* Header */
+.header {
+  position: fixed;
+  width: 1400px;
+  margin-top: 20px;
+  background-color: #FFFFFF;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  margin-left: -40px;
+}
+.navigation .navigation__link {
+  margin-left: 100px;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+.navigation .navigation__link .navigation__link__product, .navigation .navigation__link .navigation__link__customers, .navigation .navigation__link .navigation__link__pricng, .navigation .navigation__link .navigation__link__resourсes {
+  padding: 5px;
+}
+.navigation .navigation__button {
+  margin-left: -90px;
+}
+.navigation .navigation__button .navigation__button__sign-in {
+  height: 45px;
+  width: 100px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: #173A56;
+  border: 1px solid #BCD0E5;
+  font-weight: bold;
+}
+.navigation .navigation__button__sign-up {
+  margin-left: 15px;
+  width: 100px;
+}
+
+h1 {
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+/* Design Thinking */
+.design-thinking {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-left: 75px;
+  width: 1200px;
+  height: 500px;
+  margin-bottom: 110px;
+}
+
+.design-thinking__text {
+  margin-bottom: 45px;
+}
+
+.design-thinking__button, .design-tools__button {
+  width: 175px;
+}
+
+.design-thinking__link {
+  font-weight: bold;
+  color: #FF9900;
+  margin-left: 30px;
+}
+
+.design-thinking__image {
+  margin-left: auto;
+  margin-top: 70px;
+}
+
+/* Design tools */
+h3 {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.design-tools {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.design-tools__first, .design-tools__design, .design-tools__preference, .design-tools__five {
+  width: 240px;
+  height: 240px;
+}
+
+.design-tools__first__icon, .design-tools__design__icon, .design-tools__preference__icon, .design-tools__five__icon {
+  margin-bottom: 30px;
+}
+
+.design-tools__first__title, .design-tools__design__title, .design-tools__preference__title, .design-tools__five__title {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.design-tools__button {
+  margin-bottom: 110px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* Design Professionals */
 .container-design-professionals {
   display: flex;
-}
-/* Відступ згори для малого заголовка */
-.design-professionals__smol-title {
-  margin-bottom:45px;
-}
-/* Для сіх заголовків 2-го порядку задаємо розмір шрифта і відступ знизу */
-h2 {
-  font-size:36px;
-  margin-bottom:25px;
-}
-/* Для всіх заголовків 3-го порядку робимо відступ знизу */
-h3 {
-  margin-bottom:15px;
-}
-/* Для основоного блоку задаємо ширину блока і відступи */
-.wrapper-design-professionals {
-  width:400px;
-  margin-top:45px;
-  margin-left:145px;
-}
-/* Для фото в блоці дизайн задаємо відступи */
-.design__image {
-  margin-left:110px;
-  margin-top:20px;
-  margin-bottom:110px;
-}
-/* Для звичайного текста задаемо відступ знизу */
-.design-professionals__text,.accessory-makers__text,.alterationists__text {
-  margin-bottom:25px;
-}
-/* Змінюємо властивости блочних елементів */
-.container-product,.product__list,.product__item {
-  display: flex;
-}
-/* Для основоного блоку задаємо ширину блока і відступи */
-.wrapper-product{
-  width:400px;
-  margin-left:100px;
-  margin-top:45px;
-}
-/* Виставляєм елементи в стовбчик */
-.product__list {
-  flex-direction: column;
-}
-/* Виставляемо відступи для основного фото блока */
-.product__image {
-  margin-left:145px;
-  margin-top:20px;
-  margin-bottom:110px;
-}
-/* Вказуємо відступ знизу для малого заголовка */
-.product__smol-title {
-  margin-bottom:45px;
-}
-/* Задаємо відступи знизу від тексту і елементів списку */
-.product__text,.product__item {
-  margin-bottom:25px;
-}
-/* Задаємо відступи для галочок в списку */
-.product__item__img {
-  margin-right: 40px;
-  margin-top: 10px;
+  margin-left: 50px;
+  margin-bottom: 60px;
 }
 
-/* Змінюємо властивости блочних елементів */
+.design-professionals {
+  width: 600px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.design-professionals__text {
+  margin-bottom: 25px;
+}
+
+.design-professionals__smoll-title {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.design-professionals-image {
+  margin-left: 80px;
+}
+
+/* Product Managers */
+.container-product-managers {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.product-managers {
+  width: 550px;
+  margin-left: 80px;
+}
+
+.product-managers-image {
+  margin-left: 50px;
+}
+
+.product-managers__item {
+  display: flex;
+}
+
+.product-managers__item__icon {
+  margin-right: 30px;
+}
+
+.product-managers__text, .product-managers__item {
+  margin-bottom: 30px;
+}
+
+/* Marketers */
 .container-marketers {
   display: flex;
-}
-/* Відступ згори для малого заголовка */
-.marketers__smol-title {
-  margin-bottom:45px;
-}
-/* Для основоного блоку з текстом задаємо ширину блока і відступи */
-.wrapper-marketers {
-  width:400px;
-  margin-top:45px;
-  margin-left:145px;
-}
-/* Для фото в блоці дизайн задаємо відступи */
-.marketers__image {
-  margin-left:85px;
-  margin-top:20px;
-  margin-bottom:170px;
-}
-/* Для звичайного текста задаемо відступ знизу */
-.marketers__text,.marketers__alterationists__text,.marketers__custom-design-designers__text,
-.marketers__accessory-makers__text {
-  margin-bottom:25px;
+  margin-left: 50px;
+  margin-bottom: 150px;
 }
 
+.marketers {
+  width: 600px;
+}
 
+.marketers__text {
+  margin-bottom: 25px;
+}
 
+.marketers__smoll-title {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.marketers-image {
+  margin-left: 80px;
+}
+
+hr {
+  width: 1230px;
+  color: #BCD0E57F;
+  margin-left: 50px;
+  margin-bottom: 110px;
+}
+
+/* Footer */
+.footer-logo {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 85px;
+  height: 160px;
+  margin-left: 95px;
+}
+
+.footer-column-1 {
+  margin-left: 95px;
+}
+
+.footer-input {
+  width: 330px;
+}
+
+.footer-button {
+  width: 130px;
+}
+
+.footer-item {
+  margin-bottom: 10px;
+  color: #544837;
+}
